@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Enumadapter</string>
+    <string name="iphone">iPhone</string>
+    <string name="android">Android</string>
+    <string name="windows_phone">Windows Phone</string>
+    <string name="blackberry">Blackberry</string>
+    <string name="firefox_os">Firefox OS</string>
+    <string name="ubuntu_phone">Ubuntu Phone</string>
+</resources>
