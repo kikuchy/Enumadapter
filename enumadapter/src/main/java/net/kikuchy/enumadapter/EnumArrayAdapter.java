@@ -22,6 +22,17 @@ public class EnumArrayAdapter<E extends Enum<E>> extends ArrayAdapter<E> {
     private Stringify<E> mStringify;
     private int mFieldId = 0;
 
+    public EnumArrayAdapter(Context context, int resource, @Nullable Stringify<E> stringify) {
+        super(context, resource);
+        this.mStringify = stringify;
+    }
+
+    public EnumArrayAdapter(Context context, int resource, int textViewResourceId, @Nullable Stringify<E> stringify) {
+        super(context, resource, textViewResourceId);
+        this.mStringify = stringify;
+        this.mFieldId = textViewResourceId;
+    }
+
     public EnumArrayAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull E[] objects, @Nullable Stringify<E> stringify) {
         super(context, resource, objects);
         mStringify = stringify;
